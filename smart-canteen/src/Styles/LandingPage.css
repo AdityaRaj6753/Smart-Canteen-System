@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+.landing-bg {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.landing-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 900px;
+}
+
+.logo-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.logo-section span { color: #ff6b00; }
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.card-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 20px;
+    width: 300px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.login-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #ff6b00;
+}
+
+.login-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+
+.go-btn {
+    margin-top: 1.5rem;
+    background: #ff6b00;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.admin .go-btn { background: #2196F3; }

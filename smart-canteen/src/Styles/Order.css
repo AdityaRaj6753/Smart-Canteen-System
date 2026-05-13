@@ -1,0 +1,87 @@
+.kitchen-wrapper {
+    padding: 40px;
+    background: #121212; /* Dark Mode Kitchen */
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.kitchen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+}
+
+.kitchen-header h1 { color: #ff6b00; margin: 0; }
+.stats-bar { background: #333; color: #fff; padding: 8px 20px; border-radius: 50px; }
+
+.kitchen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.order-ticket {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-left: 8px solid #ff9800; /* Default Orange */
+}
+
+.order-ticket.Preparing { border-left-color: #f44336; animation: glow 2s infinite; }
+.order-ticket.Ready { border-left-color: #4caf50; }
+
+@keyframes glow {
+    0% { box-shadow: 0 0 5px #f44336; }
+    50% { box-shadow: 0 0 20px #f44336; }
+    100% { box-shadow: 0 0 5px #f44336; }
+}
+
+.ticket-header {
+    background: #f8f9fa;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 1px dashed #ddd;
+}
+
+.customer-name { padding: 15px 20px; font-size: 1.2rem; font-weight: 700; color: #333; }
+
+.order-items-list { padding: 0 20px 20px; min-height: 80px; color: #555; font-style: italic; }
+
+.ticket-footer { background: #f8f9fa; padding: 15px 20px; border-top: 1px solid #eee; }
+
+.action-buttons button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-prep { background: #fff3e0; color: #e65100; }
+.btn-ready { background: #e8f5e9; color: #2e7d32; }
+.btn-done { background: #e3f2fd; color: #1565c0; }
+
+.action-buttons button:hover { filter: brightness(0.9); transform: scale(1.02); }
+
+.delete-btn-icon {
+    background: #ffebee;
+    color: #c62828;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+}

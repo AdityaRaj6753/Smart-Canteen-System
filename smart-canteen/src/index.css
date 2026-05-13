@@ -1,0 +1,13 @@
+/* Reset default browser margins and set a global base background */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f6f8; 
+}
+
+/* Ensure all elements use standard box-sizing */
+* {
+  box-sizing: border-box;
+}
